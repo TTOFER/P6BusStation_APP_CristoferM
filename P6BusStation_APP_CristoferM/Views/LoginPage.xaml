@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6BusStation_APP_CristoferM.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="Black"
+             BackgroundImageSource="apploginbg"
+             Title="Inicio de Sesión">
+    <VerticalStackLayout Padding="20,50,20,0" VerticalOptions="StartAndExpand">
+        
+        <Image x:Name="ImgLogo" Source="logobus" HeightRequest="250"/>
+
+        <Entry x:Name="TxtUserName" Margin="0,30,0,10" Placeholder="Username/Email" Keyboard="Email" FontSize="25"/>
+
+        <Entry x:Name="TxtPassword" Placeholder="Password"  Keyboard="Text" FontSize="25" IsPassword="True"/>
+
+       <Switch x:Name="SwShowPassword" IsToggled="False" Toggled="SwShowPassword_Toggled"/>
+
+        <Button x:Name="BtnLogin" Text="LOGIN" BackgroundColor="Green" Margin="0,30,0,0"/>
+
+        <Button x:Name="BtnSignUp" Text="Sign Up" Margin="0,20,0,20" Clicked="BtnSignUp_Clicked"/>
+
+        <Label x:Name="LblPasswordRecovery" Text="Password Recovery..." HorizontalTextAlignment="End" TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>
