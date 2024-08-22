@@ -11,7 +11,7 @@ namespace P6BusStation_APP_CristoferM.Services
         //configurar ruta de consumo base
         
         //variable
-        public static string BaseURL = "http://192.168.100.9:45457/api/";
+        public static string BaseURL = "http://192.168.100.9:45455/api/";
 
         //incluir info de seguridad
         //para los end point del API

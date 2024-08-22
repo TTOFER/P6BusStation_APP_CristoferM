@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="P6BusStation_APP_CristoferM.Views.HomePage"
+             Shell.NavBarIsVisible="False"
+             BackgroundImageSource="apploginbg2"
+             Title="HomePage">
+    <VerticalStackLayout Padding="10" Spacing="10">
+
+        <Image x:Name="ImgLogo" Source="homeicon" HeightRequest="180"/>
+
+        <Label Text="Estación Municipal de Buses San Ramón" VerticalOptions="Center" HorizontalOptions="Center" FontSize="21" TextColor="White"/>
+
+        <StackLayout Padding="10" Spacing="20">
+            <!-- Título de la página -->
+            <Label Text="Buscar Rutas de Buses" FontSize="Large" HorizontalOptions="Center" TextColor="White"/>
+
+            <Label Text="Lugar de Salida" FontSize="Medium" TextColor="White"/>
+            <Picker x:Name="LstOriginDestiantion" Title="Seleccione el lugar de salida" TitleColor="White" ItemDisplayBinding="{Binding DestinationName}" />
+
+            <Label Text="Lugar de Llegada" FontSize="Medium" TextColor="White"/>
+            <Picker x:Name="LstFinalDestiantion" Title="Seleccione el lugar de llegada" TitleColor="White" ItemDisplayBinding="{Binding DestinationName}"/>
+
+            <Label Text="Fecha de Viaje" FontSize="Medium" TextColor="White"/>
+            <DatePicker TextColor="White" Date="{Binding FechaViaje}" />
+
+            <!-- Botones -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
+                <Button Text="Buscar ruta" BackgroundColor="ForestGreen"/>
+                <Button Text="Limpiar" BackgroundColor="OrangeRed"/>
+            </StackLayout>
+
+        </StackLayout>
+
+
+    </VerticalStackLayout>
+</ContentPage>

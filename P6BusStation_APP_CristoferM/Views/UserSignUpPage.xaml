@@ -2,20 +2,20 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="P6BusStation_APP_CristoferM.Views.UserSignUpPage"
-             Title="User SignUp"
-             BackgroundColor="#f5f5f5">
+             BackgroundImageSource="apploginbg2"
+             Title="User SignUp">
     <VerticalStackLayout Spacing="20" Padding="20" HorizontalOptions="Center">
-        <Picker x:Name="LstUserRoles"  Title="Select User Role" ItemDisplayBinding="{Binding UserRoleDescription}"   TextColor="Black" TitleColor="Gray" FontSize="Medium"/>
+        <Picker x:Name="LstUserRoles"  Title="Select User Role" ItemDisplayBinding="{Binding UserRoleDescription}"   TextColor="White" TitleColor="White" FontSize="Medium"/>
 
-        <Entry x:Name="TxtEmail"  Placeholder="Username/Email" Keyboard="Email" TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="TxtEmail"  Placeholder="Username/Email" Keyboard="Email" TextColor="White" FontSize="Medium"/>
 
         <Entry x:Name="TxtName"  Placeholder="Name" Keyboard="Text" TextColor="Black" FontSize="Medium"/>
 
-        <Entry x:Name="TxtPhone"  Placeholder="Phone Number" Keyboard="Telephone" TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="TxtPhone"  Placeholder="Phone Number" Keyboard="Telephone" TextColor="White" FontSize="Medium"/>
 
-        <Entry x:Name="TxtPassword"  Placeholder="Password" Keyboard="Text" TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="TxtPassword"  Placeholder="Password" Keyboard="Text" TextColor="White" FontSize="Medium"/>
 
-        <Entry x:Name="TxtAddress"  Placeholder="Address" Keyboard="Text" TextColor="Black" FontSize="Medium"/>
+        <Entry x:Name="TxtAddress"  Placeholder="Address" Keyboard="Text" TextColor="White" FontSize="Medium"/>
 
         <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Spacing="20">
             <Button x:Name="BtnAdd" Text="Add User" Clicked="BtnAdd_Clicked" BackgroundColor="Green" TextColor="WhiteSmoke" FontAttributes="Bold" CornerRadius="15" WidthRequest="160"/>

@@ -59,6 +59,9 @@
 	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\xml\network_security_config.xml" />
 	  <None Remove="Resources\Images\apploginbg.jpg" />
+	  <None Remove="Resources\Images\apploginbg2.jpg" />
+	  <None Remove="Resources\Images\fondobus.jpg" />
+	  <None Remove="Resources\Images\homeicon.png" />
 	  <None Remove="Resources\Images\logobus.png" />
 	</ItemGroup>
 
@@ -76,6 +79,9 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <MauiXaml Update="Views\HomePage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Views\UserSignUpPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
